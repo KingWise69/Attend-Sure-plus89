@@ -1,0 +1,18 @@
+{
+  "background_color": "#ffffff",
+  "description": "This is an app developed to replace the traditional pen and paper attendance system with an easily accessible device. It consists of all features involved in traditional register system.",
+  "display": "standalone",
+  "lang": "en",
+  "name": "Attend Sure",
+  "short_name": "Attend Sure",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=com.kalika.attende",
+      "id": "com.kalika.attende"
+    }
+  ],
+  "prefer_related_applications": true
+}
