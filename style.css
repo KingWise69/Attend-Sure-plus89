@@ -1,43 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Main container styling */
 .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 100vh;
 }
 
+/* Heading styles */
 .head {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.login-as-container {
+/* Styles for each login as container */
+.login-as {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: background-color 0.3s ease;
 }
 
-.login-as-container:hover {
-    transform: scale(1.05);
-}
-
-.role-image {
-    width: 100px;
-    height: 100px;
+/* Image styling */
+.image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
-.role-name {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+/* Text styling */
+.txt {
+    font-size: 1.5rem;
+}
+
+/* Hover effect for better user interaction */
+.login-as:hover {
+    background-color: #f0f0f0;
 }

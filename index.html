@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Login As</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-container">
         <h1 class="head">Login as</h1>
-
-        <div class="login-as-container" onclick="navigateToLogin('Student')">
-            <img src="/static/media/student.c8bc63991c6ac1451f7d.png" alt="Student" class="role-image">
-            <span class="role-name">Student</span>
+        
+        <div class="login-as" onclick="navigateToLogin('student')">
+            <img src="/static/media/student.c8bc63991c6ac1451f7d.png" alt="Student" class="image">
+            <p class="txt">Student</p>
         </div>
-
-        <div class="login-as-container" onclick="navigateToLogin('Teacher')">
-            <img src="/static/media/teacher.b959c2f11c4efa359ca2.png" alt="Teacher" class="role-image">
-            <span class="role-name">Teacher</span>
+        
+        <div class="login-as" onclick="navigateToLogin('teacher')">
+            <img src="/static/media/teacher.b959c2f11c4efa359ca2.png" alt="Teacher" class="image">
+            <p class="txt">Teacher</p>
         </div>
     </div>
 
-    <script>
-        function navigateToLogin(role) {
-            if (role === 'Student') {
-                window.location.href = 'loginp.html'; // Navigate to Student login page
-            } else if (role === 'Teacher') {
-                window.location.href = 'logint.html'; // Navigate to Teacher login page
-            }
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
