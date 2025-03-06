@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.head {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-as-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.login-as-container:hover {
+    transform: scale(1.05);
+}
+
+.role-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.role-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
